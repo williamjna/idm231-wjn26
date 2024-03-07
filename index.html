@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>IDM231 Zodiac Project</title>
+</head>
+<body>
+<div class= "questions">
+<button class="question-button" type="button">Question?</button>
+</div>
+    <div class="wrapper">
+        <div class="title_stuff">
+            <h1 class="title">The R&B Zodiac Test</h1>
+            <p class="title_desc"> Enter your birthday and figure out which R&B artist emulates the most closely with you!</p>
+        </div>
+        <form class="birthday">
+            <label for="birthdayInput" class="bday_text"> When's Your Birthday:
+            </label>
+            <input id="birthdayInput" class="js-date-input" type="date" name="birthday">
+            <button class="js-submit-button" type="button">Enter</button>
+        </form>
+        <div class="grid-content">
+        <div class="sza">
+            <div class="box grid-item">
+                <img src="artist/sza.png" alt="sza-img"/>
+                <button class="learn-more1" type="button"> Learn More</button>
+            </div>
+        </div>
+        <div class="brent">
+            <div class="box grid-item">
+                <img src="artist/brent faiyaz.png" alt="brent-img"/>
+                <button class="learn-more2" type="button"> Learn More</button>
+            </div>
+        </div>
+        <div class="summer">
+            <div class="box grid-item">
+                <img src="artist/summer walker.png" alt="summer-img"/>
+                <button class="learn-more3" type="button"> Learn More</button>
+            </div>
+        </div>
+        <div class="giveon">
+            <div class="box grid-item">
+                <img src="artist/giveon.png" alt="giveon-img"/>
+                <button class="learn-more4" type="button"> Learn More</button>
+            </div>
+        </div>
+        <div class="daniel">
+            <div class="box grid-item">
+                <img src="artist/daniel caesar.png" alt="daniel-img"/>
+                <button class="learn-more5" type="button"> Learn More</button>
+            </div>
+        </div>
+        <div class="jhene">
+            <div class="box grid-item">
+                <img src="artist/jhene aiko.png" alt="jhene-img">
+                <button class="learn-more6" type="button"> Learn More</button>
+            </div>
+        </div>
+        <div class="frank">
+            <div class="box grid-item">
+                <img src="artist/frank ocean.png" alt="frank-img" />
+                <button class="learn-more7" type="button"> Learn More</button>
+            </div>
+        </div>
+        <div class="steve">
+            <div class="box grid-item">
+                <img src="artist/steve lacy.png" alt="steve-img" />
+                <button class="learn-more8" type="button"> Learn More</button>
+            </div>
+        </div>
+        <div class="anderson">
+            <div class="box grid-item">
+                <img src="artist/anderson .paak.png" alt="anderson-img" />
+                <button class="learn-more9" type="button"> Learn More</button>
+            </div>
+        </div>
+        <div class="queen">
+            <div class="box grid-item">
+                <img src="artist/queen naija.png" alt="queen-img" />
+                <button class="learn-more10" type="button"> Learn More</button>
+            </div>
+        </div>
+        <div class="beyonce">
+            <div class="box grid-item">
+                <img src="artist/beyonce.png" alt="beyonce-img"/>
+                <button class="learn-more11" type="button"> Learn More</button>
+            </div>
+        </div>
+        <div class="alicia">
+            <div class="box grid-item">
+                <img src="artist/alicia keys.png" alt="alicia-img" />
+                <button class="learn-more12" type="button"> Learn More</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="question-card hidden allcards">
+        <h2 class="hover_title">Tutorial:</h2>
+        <p class="hover_desc"> Input your birthday, click enter, and see what r&b artist resonates the most with you!</p>
+        <button class="close-card">X</button>
+    </div>
+    <div class="sza-card hidden allcards" id="sza">
+        <audio id="audio-sza" src="audio/SZA - Kill Bill.mp3" > </audio>
+        <h2 class="hover_title">Looks like Sza is your alter ego!</h2>
+        <p class="hover_desc">SZA becomes your alter ego, seamlessly intertwining with the intricacies of your emotions and 
+            experiences, as her music and persona mirror the unspoken aspects of your identity, giving voice to the unexplored dimensions of your thoughts and feelings.
+        </p>
+        <img class="imagein" src="artist/sza.png" alt="sza-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <div class="brent-card hidden allcards" id="brent">
+        <audio id="audio-brent" src="audio/Brent Faiyaz - Clouded.mp3"> </audio>
+        <h2 class="hover_title">Looks like Brent Faiyaz is your alter ego!</h2>
+        <p class="hover_desc">Brent Faiyaz, with his soulful resonance, resonates as your alter ego, encapsulating the ebb and flow of personal narratives through his emotive lyrics and smooth melodies.
+        </p>
+        <img class="imagein" src="artist/brent faiyaz.png" alt="brent-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <div class="summer-card hidden allcards" id="summer">
+        <h2 class="hover_title">Looks like Summer Walker is your alter ego!</h2>
+        <audio id="audio-summer" src="audio/Summer Walker - Session 32.mp3" > </audio>
+        <p class="hover_desc">Summer Walker channels into your alter ego, her vulnerable and atmospheric soundscapes encapsulating the nuances of your emotions, providing a melodic diary for the chapters of your life.
+        </p>
+        <img class="imagein" src="artist/summer walker.png" alt="summer-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <div class="giveon-card hidden allcards" id="giveon">
+        <h2 class="hover_title">Looks like Giveon is your alter ego!</h2>
+        <audio id="audio-giveon" src="audio/Giveon - Heartbreak Anniversary.mp3" > </audio>
+        <p class="hover_desc">Giveon embodies your alter ego, with his deep, velvety voice and poignant storytelling reflecting the echoes of your own experiences, creating a sonic kinship.
+        </p>
+        <img class="imagein" src="artist/giveon.png" alt="giveon-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <div class="daniel-card hidden allcards" id="daniel">
+        <h2 class="hover_title">Looks like Daniel Caesar is your alter ego!</h2>
+        <audio id="audio-daniel" src="audio/Daniel Caesar - Loose.mp3" > </audio>
+        <p class="hover_desc">Daniel Caesar, through his soul-stirring music, serves as your alter ego, delving into the intricacies of love and self-discovery, resonating with the introspective facets of your own journey.
+        </p>
+        <img class="imagein" src="artist/daniel caesar.png" alt="daniel-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <div class="jhene-card hidden allcards" id="jhene">
+        <h2 class="hover_title">Looks like Jhene Aiko is your alter ego!</h2>
+        <audio id="audio-jhene" src="audio/Jhené Aiko - Sativa.mp3"> </audio>
+        <p class="hover_desc">Jhene Aiko becomes your alter ego, navigating the spectrum of emotions with her ethereal voice and introspective lyrics, intertwining her artistry with the emotional tapestry of your own existence.
+        </p>
+        <img class="imagein" src="artist/jhene aiko.png" alt="jhene-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <div class="frank-card hidden allcards" id="frank">
+        <h2 class="hover_title">Looks like Frank Ocean is your alter ego!</h2>
+        <audio id="audio-frank" src="audio/Frank Ocean - Ivy.mp3" > </audio>
+        <p class="hover_desc">Frank Ocean, as your alter ego, ventures into the depths of self-discovery and introspection, with his genre-defying sound serving as a companion to your own explorations.
+        </p>
+        <img class="imagein" src="artist/frank ocean.png" alt="frank-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <div class="steve-card hidden allcards" id="steve">
+        <h2 class="hover_title">Looks like Steve Lacy is your alter ego!</h2>
+        <audio id="audio-steve" src="audio/Steve Lacy - Bad Habit.mp3" > </audio>
+        <p class="hover_desc">Steve Lacy, embodying your alter ego, brings a fusion of soul and funk, capturing the essence of your vibrant spirit and creative expressions.
+        </p>
+        <img class="imagein" src="artist/steve lacy.png" alt="steve-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <div class="anderson-card hidden allcards" id="anderson">
+        <h2 class="hover_title">Looks like Anderson .Paak is your alter ego!</h2>
+        <audio id="audio-anderson" src="audio/Anderson .Paak - Leave the Door Open.mp3" > </audio>
+        <p class="hover_desc">Anderson .Paak becomes your alter ego, infusing energy and charisma into your narrative through his dynamic musical style that effortlessly blends genres.
+        </p>
+        <img class="imagein" src="artist/anderson .paak.png" alt="anderson-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <div class="queen-card hidden allcards" id="queen">
+        <h2 class="hover_title">Looks like Queen Naija is your alter ego!</h2>
+        <audio id="audio-queen" src="audio/Queen Naija - Karma.mp3" > </audio>
+        <p class="hover_desc">Queen Naija, as your alter ego, uses her emotive voice and storytelling prowess to encapsulate the highs and lows of your personal journey, creating a melodic reflection of your experiences.
+        </p>
+        <img class="imagein" src="artist/queen naija.png" alt="queen-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <div class="beyonce-card hidden allcards" id="beyonce">
+        <h2 class="hover_title">Looks like Beyonce is your alter ego!</h2>
+        <audio id="audio-beyonce" src="audio/Beyoncé - Halo.mp3" > </audio>
+        <p class="hover_desc">Beyoncé, with her commanding presence and empowering anthems, embodies your alter ego, reflecting strength, resilience, and unapologetic self-expression.
+        </p>
+        <img class="imagein" src="artist/beyonce.png" alt="beyonce-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <div class="alicia-card hidden allcards" id="alicia">
+        <h2 class="hover_title"> You're like Mac Miller!</h2>
+        <audio id="audio-alicia" src="audio/Alicia Keys - If I Ain't Got You.mp3" > </audio>
+        <p class="hover_desc">Alicia Keys becomes your alter ego, harmonizing with the rhythm of your life through her soulful melodies and empowering lyrics, providing a soundtrack for your personal triumphs and introspective moments.
+        </p>
+        <img class="imagein" src="artist/alicia keys.png" alt="alicia-img-card">
+        <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
+    </div>
+    <audio id="speakers"></audio>
+    <script src="project.js"></script>
+</body>
+
+</html>
