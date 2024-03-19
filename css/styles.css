@@ -1,7 +1,5 @@
 :root {
     --background-color: white;
-    --bg-two: #0D1F2D;
-    --bg-three: #546A7B;
     --padding-avg: 4rem;
 }
 * {
@@ -26,37 +24,38 @@ body {
     font-style: normal;
 }
 .title {
-    color: var(--bg-two);
+    color: #000000;
     text-align: center;
     padding: .5rem;
     font-family: 'Hedvig_Letter_Serif';
     font-size: 2.5rem;
 }
-.title_desc {
-    color: var(--bg-three);
+.title_description {
+    color: #000000;
     text-align: center;
     font-family:'Hedvig_Letters_Sans';
     padding-bottom: 1rem;
     font-size: 1.5rem;
 }
-.title_stuff {
+.header_title {
     grid-area: s;
 }
-.grid-content {
+.grid_content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 1.5rem;
 }
-.grid-item {
+.grid_item {
     text-align: center;
 }
+
 .birthday {
 display: block;
 grid-area: p;
 place-self: stretch;
 font-family:'Hedvig_Letters_Sans';
-color: var(--bg-two);
+color: #000000;
 }
 
 .box img{
@@ -67,6 +66,7 @@ color: var(--bg-two);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     object-fit: cover;
 }
+
 .box {
     padding: 2rem;
 
@@ -76,28 +76,31 @@ color: var(--bg-two);
     font-family:'Hedvig_Letters_Serif';
     padding: 1rem;
 }
-.js-date-input {
+.js_date {
     font-family:'Hedvig_Letters_Sans';
-    color: var(--bg-two);
+    color: #000000;
     display: block;
     margin: auto;
     padding-bottom: .5rem;
+    margin-bottom: 1rem;
 }
-.bday_text {
+.birthday_text {
+    color:#000000;
     display: block;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
-.js-submit-button {
+.js_submit {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#155dc7;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: auto;
 }
-.sza-card, .brent-card, .summer-card, .giveon-card, .daniel-card, .jhene-card, .frank-card, .steve-card, .anderson-card, .queen-card, .beyonce-card, .alicia-card, .question-card {
+.sza_card, .brent_card, .summer_card, .giveon_card, .daniel_card, .jhene_card, .frank_card, .steve_card, .anderson_card, .queen_card, .beyonce_card, .alicia_card, .question_card {
     background-color: #fff;
     position: fixed;
     max-height: 90vh;
@@ -115,7 +118,7 @@ color: var(--bg-two);
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.imagein {
+.image_show {
     height: auto;
     width: 200px;
     border-radius: 8px;
@@ -127,22 +130,22 @@ color: var(--bg-two);
 }
 .hover_title {
     font-family:'Hedvig_Letters_Sans';
-    color: var(--bg-two);
+    color: #000000;
     padding: 1rem;
 }
-.hover_desc {
+.hover_description {
     font-family:'Hedvig_Letters_Serif';
-    color: var(--bg-three);
+    color: #000000;
     line-height: 30px;
     padding: 1rem;
 }
 
-.question-button {
+.questions_button {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#155dc7;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
     top: 25%;    
@@ -152,154 +155,152 @@ color: var(--bg-two);
     padding-top: 2rem;
 
 }
-.questionstuff {
-    padding: 1rem;
-}
 
-.learn-more1 {
+.learn_more1 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.learn-more2 {
+.learn_more2 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.learn-more3 {
+.learn_more3 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.learn-more4 {
+.learn_more4 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.learn-more5 {
+.learn_more5 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.learn-more6 {
+.learn_more6 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.learn-more7 {
+.learn_more7 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.learn-more8 {
+.learn_more8 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.learn-more9 {
+.learn_more9 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.learn-more10 {
+.learn_more10 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.learn-more11 {
+.learn_more11 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.learn-more12 {
+.learn_more12 {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
-    border-radius: 5px;
-    padding: .3rem;
+    background:#800020;
+    border-radius: 20px;
+    padding: .6rem 1rem;
     display: block;
     margin: 0 auto;
 }
 
-.rap {
+.artist {
     font-family:'Hedvig_Letters_Sans';
     color: white;
-    background:var(--bg-two);
+    background:#000000;
     border-radius: 5px;
     padding: .5rem;
     display: block;
     margin: auto;
 }
-.rap {
+.artist {
     transition: all .2s ease-in-out; 
 }
-.rap:hover {
+.artist_hover {
     transform: scale(1.1);
 }
-.js-submit-button {
+.js_submit_button {
     transition: all .2s ease-in-out;
 }
-.js-submit-button:hover {
+.js_submit_button:hover {
     transform: scale(1.1);
 }
-.question-button {
+.questions_button {
     transition: all .2s ease-in-out;
+    margin-bottom: .75rem;
 }
-.question-button:hover {
+.questions_button:hover {
     transform: scale(1.1);
 }
